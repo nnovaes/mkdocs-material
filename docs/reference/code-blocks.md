@@ -53,7 +53,7 @@ configuring syntax highlighting of code blocks:
         respective stylesheet and JavaScript from a [CDN][9] serving
         Highlight.js in `mkdocs.yml`:
 
-        === "docs/javascripts/config.js"
+        === "`docs/javascripts/config.js`"
 
             ``` js
             document$.subscribe(() => {
@@ -61,7 +61,7 @@ configuring syntax highlighting of code blocks:
             })
             ```
 
-        === "mkdocs.yml"
+        === "`mkdocs.yml`"
 
             ``` yaml
             extra_javascript:
@@ -361,6 +361,30 @@ def bubble_sort(items):
 _Result_:
 
 ``` python hl_lines="2 3"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+Line ranges can also be used for conveniently specifying multiple lines.
+
+_Example_:
+
+```` markdown
+``` python hl_lines="2-5"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+````
+
+_Result_:
+
+``` python hl_lines="2-5"
 def bubble_sort(items):
     for i in range(len(items)):
         for j in range(len(items) - 1 - i):

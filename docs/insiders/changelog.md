@@ -6,10 +6,56 @@ template: overrides/main.html
 
 ## Material for MkDocs Insiders
 
+### 3.1.1 <small>_ September 26, 2021</small>
+
+- Fixed ordering bug in search exclusion logic
+
+### 3.1.0 <small>_ September 26, 2021</small>
+
+- Added support for excluding pages, sections, and elements from search
+- Fixed #2803: Code block annotations not visible when printing
+
+### 3.0.1 <small>_ September 19, 2021</small>
+
+- Added support for using literal `h1-6` tags for search plugin
+- Fixed search plugin breaking on void elements without slashes
+- Fixed search plugin filtering link contents from headlines
+- Fixed search plugin handling of multiple `h1` headlines
+- Fixed search plugin handling of missing `h1` headlines
+
+### 3.0.0 <small>_ September 13, 2021</small>
+
+- Rewrite of MkDocs' search plugin
+- Added support for rich search previews
+- Added support for tokenizer with lookahead
+- Improved search indexing performance (twice as fast)
+- Improved search highlighting
+
+### 2.13.3 <small>_ September 1, 2021</small>
+
+- Added support for disabling social card generation
+
+### 2.13.2 <small>_ August 25, 2021</small>
+
+- Fixed #2965: Social plugin error when primary color is not defined
+
+### 2.13.1 <small>_ August 21, 2021</small>
+
+- Fixed #2948: Social cards are not cached
+- Fixed #2953: Mermaid.js diagrams can't be centered anymore
+
+### 2.13.0 <small>_ August 7, 2021</small>
+
+- Added support for custom colors in social cards
+
+### 2.12.2 <small>_ August 4, 2021</small>
+
+- Fixed #2891: Division by zero error in social plugin
+
 ### 2.12.1 <small>_ July 26, 2021</small>
 
-- Fixed error in social cards plugin when `site_description` was not set
-- Fixed error in social cards plugin for non-ASCII characters
+- Fixed error in social plugin when `site_description` was not set
+- Fixed error in social plugin for non-ASCII characters
 
 ### 2.12.0 <small>_ July 25, 2021</small>
 

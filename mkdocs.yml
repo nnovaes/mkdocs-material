@@ -54,7 +54,7 @@ theme:
     - content.tabs.link
     # - header.autohide
     # - navigation.expand
-    # - navigation.indexes
+    - navigation.indexes
     # - navigation.instant
     - navigation.sections
     - navigation.tabs
@@ -142,7 +142,6 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -161,7 +160,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -213,7 +213,12 @@ nav:
     - Meta tags: reference/meta-tags.md
     - Variables: reference/variables.md
   - Insiders:
-    - Sponsorship: insiders/index.md
+    - insiders/index.md
     - Getting started:
       - Installation: insiders/getting-started.md
       - Changelog: insiders/changelog.md
+  - Blog:
+    - blog/index.md
+    - 2021:
+      - blog/2021/excluding-content-from-search.md
+      - blog/2021/search-better-faster-smaller.md
